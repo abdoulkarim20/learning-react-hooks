@@ -43,16 +43,18 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div>
+        <div className='container-welcome'>
           <p>
             Welcome to you {name} in your worksapce for learning ReactJS. NEVER GIVE UP
           </p>
-          <input placeholder='write your name for welcome' className='my-3' onChange={(e) => { setName(e.target.value) }}></input>
+          <div className='my-3'>
+            <input placeholder='write your name for welcome' className='input-champ' onChange={(e) => { setName(e.target.value) }}></input>
+          </div>
         </div>
         <div style={{ color: color }}>
           {count}
           <div className='my-3'>
-            <input placeholder='Enter number' ref={inpupRef} type="number" onChange={handleOnchange}></input>
+            <input className='input-champ' placeholder='Enter number' ref={inpupRef} type="number" onChange={handleOnchange}></input>
           </div>
           <div>
             <button className='mt-5 btn btn-danger' onClick={resetCount}>Effacer</button>
