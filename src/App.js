@@ -1,5 +1,6 @@
 import './App.css';
 import React, { useState, useEffect, useRef, useReducer } from 'react';
+/*Utilisation avancee des Hooks
 const initialState = {
   count: 0,
   intValue: null
@@ -7,13 +8,16 @@ const initialState = {
 function reducer(state, action) {
   switch (action.type) {
     case "change": {
-
+      return {
+        ...state,
+        intValue: 0
+      };
     }
   }
 }
-
+*/
 function App() {
-  const [state, dispatch] = useReducer(reducer, initialState);
+  /* const [state, dispatch] = useReducer(reducer, initialState);*/
   const inpupRef = useRef();
   const [name, setName] = useState("Abdoul Karim DIALLO");
   const [count, setCount] = useState(0);
