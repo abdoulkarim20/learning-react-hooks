@@ -41,14 +41,14 @@ function App() {
       <header className="App-header">
         <div>
           <p>
-            Salut {name}
+            Welcome to you {name} in your worksapce for learning ReactJS. NEVER GIVE UP
           </p>
-          <input className='my-3' onChange={(e) => { setName(e.target.value) }}></input>
+          <input placeholder='write your name for welcome' className='my-3' onChange={(e) => { setName(e.target.value) }}></input>
         </div>
         <div style={{ color: color }}>
           {count}
           <div className='my-3'>
-            <input ref={inpupRef} type="number" onChange={handleOnchange}></input>
+            <input placeholder='Enter number' ref={inpupRef} type="number" onChange={handleOnchange}></input>
           </div>
           <div>
             <button className='mt-5 btn btn-danger' onClick={resetCount}>Effacer</button>
